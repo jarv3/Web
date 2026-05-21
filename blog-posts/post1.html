@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+   
+  <meta charset="UTF-8">
+  
+  <title>Post</title>
+    
+  <!-- MISMO CSS -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" href="../assets/img/logo.png" type="image/png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .post-page {
+      max-width: 900px;
+      margin: auto;
+      padding: 120px 20px;
+    }
+
+    .post-page img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    .post-page h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .post-page p {
+      color: #cbd5e1;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .nav-posts {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .nav-posts a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+    }
+
+    .nav-posts a::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: red;
+      transition: 0.3s;
+    }
+
+    .nav-posts a:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container nav">
+    <div class="logo-container">
+      <img src="../assets/img/logo.png" class="logo-img">
+      <span class="logo-text">Emprendedor</span>
+    </div>
+
+    <nav id="menu">
+      <a href="../index.html">Inicio</a>
+      <a href="../blog.html">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<!-- CONTENIDO -->
+<section class="post-page">
+
+  <img src="https://picsum.photos/800/400?1">
+
+  <h1>Avanzando en mi tesis doctoral</h1>
+
+  <p>Este es el contenido completo del artículo. Aquí puedes escribir todo lo relacionado con tu tesis...</p>
+
+  <p>Puedes dividirlo en varios párrafos, agregar ideas, metodología, resultados, etc.</p>
+
+  <p>Este sistema simula cómo funciona WordPress pero en HTML puro.</p>
+
+  <!-- NAVEGACIÓN -->
+  <div class="nav-posts">
+    
+    <a href="post2.html">Siguiente →</a>
+  </div>
+
+</section>
+
+</body>
+</html>

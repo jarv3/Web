@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+  <title>Blog</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- FUENTE PARA TITULOS BONITOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <style>
+  .blog {
+    padding: 120px 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .blog h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: white;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  /* CARDS IGUALES A TU DISEÑO */
+  .post {
+    background: rgba(255,255,255,0.03);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+    position: relative;
+  }
+
+  .post:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.2);
+  }
+
+  .post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .post-content {
+    padding: 20px;
+  }
+
+  .post h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .meta {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-bottom: 10px;
+  }
+
+  .post p {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+  }
+
+  .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    position: relative;
+  }
+
+  /* EFECTO LINEA ROJA IGUAL A TU NAV */
+  .read-more::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #ff1c1c;
+    transition: 0.3s;
+  }
+
+  .read-more:hover::after {
+    width: 100%;
+  }
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER IGUAL -->
+<header id="header">
+  <div class="container nav">
+    <div class="logo-container">
+      <img src="assets/img/logo.png" alt="Logo" class="logo-img">
+      <span class="logo-text">Emprendedor</span>
+    </div>
+
+    <nav id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="index.html">Servicios</a>
+      <a href="index.html">Proyectos</a>
+      <a href="index.html">Contacto</a>
+      <a href="blog.html" class="active">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<!-- BLOG -->
+<section class="blog">
+  <h1>Blog</h1>
+
+  <div class="blog-grid">
+
+    <!-- CARD 1 -->
+    <div class="post">
+      <img src="https://picsum.photos/400/300?1" alt="Post 1">
+      <div class="post-content">
+        <h3>Avanzando en mi tesis doctoral</h3>
+        <div class="meta">31 Dic 2025 · 0 comentarios</div>
+        <p>Hoy avanzo un paso más en mi tesis doctoral, explorando nuevas ideas y aplicando tecnología...</p>
+        <a href="blog-posts/post1.html" class="read-more">Leer más</a>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="post">
+      <img src="https://picsum.photos/400/300?2" alt="Post 2">
+      <div class="post-content">
+        <h3>Mi primera app en Python</h3>
+        <div class="meta">22 Dic 2025 · 4 comentarios</div>
+        <p>He comenzado a desarrollar una aplicación en Python para mejorar mis habilidades...</p>
+        <a href="blog-posts/post2.html" class="read-more">Leer más</a>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="post">
+      <img src="https://picsum.photos/400/300?3" alt="Post 3">
+      <div class="post-content">
+        <h3>Importancia de la tecnología en salud</h3>
+        <div class="meta">17 Jul 2025 · 0 comentarios</div>
+        <p>La tecnología en el hogar puede mejorar nuestra calidad de vida...</p>
+        <a href="blog-posts/post3.html" class="read-more">Leer más</a>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="post">
+      <img src="https://picsum.photos/400/300?4" alt="Post 4">
+      <div class="post-content">
+        <h3>Curriculum Vitae de alto impacto</h3>
+        <div class="meta">19 Abr 2025 · 2 comentarios</div>
+        <p>Cómo crear un CV moderno que destaque en el competitivo mundo laboral...</p>
+        <a href="blog-posts/post4.html" class="read-more">Leer más</a>
+      </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="post">
+      <img src="https://picsum.photos/400/300?5" alt="Post 5">
+      <div class="post-content">
+        <h3>Control de gastos efectivo</h3>
+        <div class="meta">4 Ene 2025 · 0 comentarios</div>
+        <p>Aprende a gestionar tus finanzas de forma inteligente y optimizada...</p>
+        <a href="blog-posts/post5.html" class="read-more">Leer más</a>
+      </div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="post">
+      <img src="https://picsum.photos/400/300?6" alt="Post 6">
+      <div class="post-content">
+        <h3>Investigación científica moderna</h3>
+        <div class="meta">5 Dic 2024 · 0 comentarios</div>
+        <p>La investigación científica ha evolucionado gracias al uso de nuevas tecnologías...</p>
+        <a href="blog-posts/post6.html" class="read-more">Leer más</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
