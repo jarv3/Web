@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Post</title>
+
+  <!-- MISMO CSS -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" href="../assets/img/logo.png" type="image/png">
+
+  <style>
+    .post-page {
+      max-width: 900px;
+      margin: auto;
+      padding: 120px 20px;
+    }
+
+    .post-page img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    .post-page h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .post-page p {
+      color: #cbd5e1;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .nav-posts {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .nav-posts a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+    }
+
+    .nav-posts a::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: red;
+      transition: 0.3s;
+    }
+
+    .nav-posts a:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container nav">
+    <div class="logo-container">
+      <img src="../assets/img/logo.png" class="logo-img">
+      <span class="logo-text">Emprendedor</span>
+    </div>
+
+    <nav id="menu">
+      <a href="../index.html">Inicio</a>
+      <a href="../blog.html">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<!-- CONTENIDO -->
+<section class="post-page">
+
+  <img src="https://picsum.photos/800/400?2">
+
+  <h3>Gasto Efectivo</h3>
+
+<p>
+<strong>Gasto Efectivo</strong> es una aplicación web desarrollada en <strong>Python</strong> que permite a los usuarios 
+gestionar sus finanzas personales de forma eficiente, ofreciendo herramientas para registrar ingresos y egresos, 
+visualizar información de manera clara e interactiva y generar reportes precisos.
+</p>
+
+<h4>Características Principales del Dashboard</h4>
+<ul>
+    <li>Panel intuitivo con gráficos interactivos para el análisis financiero.</li>
+    <li>Clasificación de gastos por categorías.</li>
+    <li>Visualización de transacciones en tiempo real.</li>
+    <li>Reportes dinámicos que facilitan la toma de decisiones.</li>
+</ul>
+
+<h4>¿Cómo Funciona?</h4>
+<p>
+En el siguiente video se muestra el uso de la herramienta:
+</p>
+
+<p>
+<!-- Aquí puedes insertar el iframe del video si lo tienes -->
+<a href="#" target="_blank">Ver demostración del sistema</a>
+</p>
+
+<h4>Frases Inspiradoras sobre Finanzas Personales</h4>
+<p>Para motivar una mejor gestión de tus finanzas, considera estas frases:</p>
+
+<ol>
+    <li>“Un presupuesto es decirle a tu dinero a dónde ir, en lugar de preguntarte a dónde se fue.” — Dave Ramsey</li>
+    <li>“No ahorres lo que queda después de gastar, gasta lo que queda después de ahorrar.” — Warren Buffett</li>
+    <li>“La riqueza consiste más en el control de los gastos que en la abundancia de los ingresos.” — Proverbio</li>
+</ol>
+
+<h4>Beneficios de usar la app</h4>
+<ul>
+    <li>Mayor control sobre tus finanzas personales.</li>
+    <li>Toma de decisiones basada en datos reales.</li>
+    <li>Organización eficiente de ingresos y gastos.</li>
+    <li>Facilidad de uso gracias a su diseño intuitivo.</li>
+</ul>
+
+<h4>Conclusión</h4>
+<p>
+<strong>Gasto Efectivo</strong> se posiciona como una herramienta práctica y accesible para mejorar la salud financiera. 
+Su integración de análisis, visualización y facilidad de uso ofrece una experiencia completa para el usuario.
+</p>
+
+<p>
+<a href="https://gastoefectivo.streamlit.app/" target="_blank" style="color:#1a73e8; font-weight:bold;">
+    Acceder a la aplicación
+</a>
+</p>
+
+  <!-- NAVEGACIÓN -->
+  <div class="nav-posts">
+    <a href="avanzando-en-mi-tesis-doctoral.html">← Anterior</a>
+    <a href="gasto-efectivo.html">Siguiente →</a>
+  </div>
+
+</section>
+
+</body>
+</html>
