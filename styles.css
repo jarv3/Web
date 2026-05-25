@@ -432,7 +432,7 @@ nav {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 40px;
-  align-items: center;
+  align-items: start;
 }
 
 .about-text p {
@@ -444,15 +444,19 @@ nav {
 .about-image {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px; /* 🔥 ajusta este valor */
 }
 
+
 .about-image img {
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
-  border-radius: 50%; /* efecto foto circular */
+  border-radius: 50%;
   border: 3px solid rgba(255,255,255,0.1);
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
