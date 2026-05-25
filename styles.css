@@ -441,10 +441,17 @@ nav {
   opacity: 0.9;
 }
 
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
 .about-image img {
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%; /* efecto foto circular */
+  border: 3px solid rgba(255,255,255,0.1);
 }
 
 /* Responsive */
