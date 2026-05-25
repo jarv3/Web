@@ -458,3 +458,16 @@ nav {
     order: -1;
   }
 }
+.about-tags {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about-tags span {
+  background: rgba(255,255,255,0.08);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+}
